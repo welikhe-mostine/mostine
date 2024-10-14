@@ -1,0 +1,13 @@
+def main():
+    print("This program illustrates a chaotic function")
+    x = float(input("Enter a number between 0 and 1: "))
+    n = int(input("How many numbers should I print? "))
+
+    k = 2.0
+    print(f"{'Iteration':<10}{'Value':<10}")  # Header for columns
+    for i in range(n):
+        x = k * x * (1 - x)  # Chaotic function
+        print(f"{i + 1:<10}{x:<10.6f}")  # Print iteration and value
+
+
+main()
